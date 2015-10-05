@@ -33,7 +33,7 @@ cd $dir
 
 echo Installing required packages
 echo
-sudo apt-get install -y \
+apt-get install -y \
     git \
     curl \
     wget \
@@ -84,8 +84,8 @@ cd $dir/folly/folly
 autoreconf -ivf
 ./configure
 make
-sudo make install
-sudo ldconfig # reload the lib paths after freshly installed folly. fbthrift needs it.
+make install
+ldconfig # reload the lib paths after freshly installed folly. fbthrift needs it.
 
 echo
 echo Building fbthrift
@@ -95,7 +95,7 @@ cd $dir/fbthrift/thrift
 autoreconf -ivf
 ./configure
 make
-sudo make install
+make install
 
 echo
 echo 'Installing TH++'
