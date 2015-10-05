@@ -33,40 +33,7 @@ cd $dir
 
 echo Installing required packages
 echo
-apt-get install -y \
-    git \
-    curl \
-    wget \
-    g++ \
-    automake \
-    autoconf \
-    autoconf-archive \
-    libtool \
-    libboost-all-dev \
-    libevent-dev \
-    libdouble-conversion-dev \
-    libgoogle-glog-dev \
-    libgflags-dev \
-    liblz4-dev \
-    liblzma-dev \
-    libsnappy-dev \
-    make \
-    zlib1g-dev \
-    binutils-dev \
-    libjemalloc-dev \
-    $extra_packages \
-    flex \
-    bison \
-    libkrb5-dev \
-    libsasl2-dev \
-    libnuma-dev \
-    pkg-config \
-    libssl-dev \
-    libedit-dev \
-    libmatio-dev \
-    libpython-dev \
-    libpython3-dev \
-    python-numpy
+
 
 echo
 echo Cloning repositories
